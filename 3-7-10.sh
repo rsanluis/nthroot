@@ -10,7 +10,7 @@ for p in {0..21}; do
   printf "n=%2s nth root of (10^%2s=%28s) is " $n $p $a
   if [[ $p -eq 0 ]]
   then
-    // https://github.com/rsanluis/nthroot/blob/main/0th_root_rules_when_x_is_1.png
+    # https://github.com/rsanluis/nthroot/blob/main/0th_root_rules_when_x_is_1.png
     echo "1"
   else
     awk "BEGIN { print $a ** (1 / $n) }"
